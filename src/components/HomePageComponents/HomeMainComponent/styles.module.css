@@ -1,0 +1,91 @@
+.main_component_container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 3rem;
+}
+
+.main_component_container_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.track_crypto_heading,
+.real_time_heading {
+  font-size: 6.5rem;
+  margin: 0;
+}
+
+.track_crypto_heading {
+  color: var(--white);
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--white);
+}
+.track_crypto_heading:hover {
+  color: var(--black);
+  -webkit-text-stroke-color: var(--white);
+  transition: all 0.3s;
+}
+.real_time_heading {
+  color: var(--blue);
+}
+
+.info {
+  color: var(--grey);
+}
+
+.btn_flex {
+  display: flex;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.main_component_container_right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.mobile {
+  position: absolute;
+  min-width: 300px;
+  z-index: 100;
+  top: 25px;
+  left: 25%;
+  width: 25%;
+}
+.gradient {
+  position: absolute;
+  min-width: 250px;
+  top: 75px;
+  left: 30%;
+  width: 25%;
+}
+
+@media only screen and (max-width: 1250px) {
+  .track_crypto_heading,
+  .real_time_heading {
+    font-size: 5rem;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .main_component_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_component_container_right {
+    width: 100%;
+  }
+  .track_crypto_heading,
+  .real_time_heading {
+    font-size: 3.5rem;
+  }
+  .main_component_container_left {
+    align-items: center;
+    justify-content: center;
+  }
+  .info {
+    width: 65%;
+    min-width: 300px;
+  }
+}

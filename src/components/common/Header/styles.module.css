@@ -1,0 +1,48 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--black);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.links_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 1rem;
+  :hover {
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.drawer {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+  .links_list {
+    display: none;
+  }
+
+  .drawer {
+    display: block;
+  }
+}

@@ -1,0 +1,21 @@
+.btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  text-align: center;
+  cursor: pointer;
+  min-width: 100px;
+  border: 2px solid var(--blue);
+}
+
+.btn_outlined {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  text-align: center;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  min-width: 100px;
+}

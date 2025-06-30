@@ -1,0 +1,19 @@
+.link {
+  color: var(--grey);
+}
+.link:hover {
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.drawer_links_list {
+  list-style: none;
+  width: 40vw;
+  height: 100vh;
+  background-color: var(--black);
+  margin: 0;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
