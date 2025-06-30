@@ -1,0 +1,141 @@
+.coins_list_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.coins_list_row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.coin_info {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 1.5rem;
+
+  min-width: 220px;
+}
+
+.coin_img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.coin_id_name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coin_name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--white);
+  text-transform: uppercase;
+  text-align: left;
+  border-color: green;
+}
+
+.coin_id {
+  margin: 0;
+  color: var(--grey);
+  font-weight: light;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.chip_flex {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 2rem;
+  min-width: 160px;
+  text-align: left;
+}
+.chip_price {
+  border: 2px solid var(--green);
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  color: var(--green);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.chip_price:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_red {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.chip_red:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_icon {
+  color: var(--green);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chip_icon:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_icon_red {
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+.chip_icon_red:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.market_cap_desktop_view,
+.market_cap_mobile_view {
+  color: var(--grey);
+  font-size: 0.8rem;
+  width: 200px;
+}
+
+.market_cap_mobile_view {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .coins_list_container {
+    width: 95%;
+  }
+  .chip_flex {
+    min-width: 90px;
+  }
+  .chip_icon {
+    display: none;
+  }
+
+  .market_cap_mobile_view {
+    display: block;
+  }
+  .market_cap_desktop_view {
+    display: none;
+  }
+}

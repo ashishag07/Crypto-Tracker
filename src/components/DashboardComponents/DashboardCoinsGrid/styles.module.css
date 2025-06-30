@@ -1,0 +1,7 @@
+.grid_flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  align-items: center;
+  justify-content: center;
+}

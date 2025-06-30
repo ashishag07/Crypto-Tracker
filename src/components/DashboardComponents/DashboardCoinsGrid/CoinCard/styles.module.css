@@ -1,0 +1,120 @@
+.card_flex,
+.card_flex_red {
+  width: 300px;
+  border-radius: 0.75rem;
+  background-color: var(--darkgrey);
+}
+
+.card_flex:hover {
+  border: 2px solid var(--green);
+  transition: all 0.3s;
+}
+
+.card_flex_red:hover {
+  border: 2px solid var(--red);
+  transition: all 0.3s;
+}
+
+.coin_info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 1.5rem;
+}
+
+.coin_img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.coin_id_name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.coin_name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.coin_id {
+  margin: 0;
+  color: var(--grey);
+  font-weight: light;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.chip_flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin: 1.5rem 2rem;
+}
+.chip_price {
+  border: 2px solid var(--green);
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  color: var(--green);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.chip_price:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_red {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+.chip_red:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_icon {
+  color: var(--green);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chip_icon:hover {
+  background-color: var(--green);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.chip_icon_red {
+  color: var(--red);
+  border: 2px solid var(--red);
+}
+.chip_icon_red:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.info_container {
+  margin: 1.5rem;
+}
+
+.volume {
+  color: var(--grey);
+  font-size: 0.8rem;
+}
+.market_cap {
+  color: var(--grey);
+  font-size: 0.8rem;
+}
